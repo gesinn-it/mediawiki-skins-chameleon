@@ -63,6 +63,7 @@ class SearchBar extends Component {
 			) . ' action="' . $this->getSkinTemplate()->data[ 'wgScript' ] . '">' .
 
 			$this->indent( 1 ) . '<input type="hidden" name="title" value="' . $this->getSkinTemplate()->data[ 'searchtitle' ] . '" />' .
+                        $this->indent( 1 ) . '<input type="hidden" name="profile" value="all" />' .			
 			$this->indent() . '<div class="input-group">' .
 			$this->indent( 1 ) . $this->getSkinTemplate()->makeSearchInput( array( 'id' => IdRegistry::getRegistry()->getId( 'searchInput' ), 'type' => 'text', 'class' => 'form-control' ) ) .
 			$this->indent() . '<div class="input-group-btn">' .
